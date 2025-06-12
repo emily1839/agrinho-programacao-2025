@@ -1,62 +1,62 @@
 body {
   margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
   background-color: white;
 }
 
 header {
-  background-color: #c0e28c;
-  color: #2e6622;
+  background-color: #b2d88d;
+  color: #2d591a;
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px;
+}
+
+.menu {
   font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+header h1 {
+  font-size: 28px;
   font-weight: bold;
 }
 
-.menu-icon {
-  margin-right: 10px;
-  font-size: 24px;
-}
-
-.welcome {
+.boas-vindas {
   display: flex;
-  background-color: #b7ec82;
-  padding: 15px;
+  background-color: #d7f4a1;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 15px;
   align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 15px;
 }
 
-.vaca {
-  height: 100px;
+.boas-vindas img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
 }
 
-.texto-bemvindo {
-  max-width: 750px;
+.mensagem h2 {
+  margin: 0 0 10px;
+  color: #2d591a;
 }
 
-.texto-bemvindo h2 {
-  margin: 0;
-  color: #245c1d;
-}
-
-.texto-bemvindo p {
-  margin-top: 5px;
+.mensagem p {
+  color: #2d591a;
   font-size: 15px;
   line-height: 1.5;
 }
 
 .endereco {
+  text-align: center;
   border: 2px solid black;
   margin: 20px auto;
-  padding: 10px;
+  padding: 15px;
   width: 90%;
-  max-width: 400px;
-  text-align: center;
-  font-size: 14px;
+  max-width: 500px;
+  font-size: 15px;
 }
 
 .produtos {
@@ -64,61 +64,35 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   padding: 20px;
-  box-sizing: border-box;
 }
 
 .produto {
-  border: 1px solid #888;
-  border-radius: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
   padding: 10px;
   text-align: center;
+  background-color: white;
 }
 
 .produto img {
   width: 100%;
-  height: 100px;
+  height: 120px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .produto h3 {
+  margin: 10px 0 5px;
   font-size: 16px;
-  margin: 10px 0;
 }
 
 .produto button {
-  background-color: #e6e6e6;
+  background-color: #f0f0f0;
   border: none;
-  padding: 8px 16px;
-  font-weight: bold;
+  padding: 8px 20px;
   border-radius: 6px;
+  font-size: 14px;
   cursor: pointer;
-  font-size: 15px;
+  font-weight: bold;
 }
-
-.produto button:hover {
-  background-color: #d0d0d0;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .produtos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .produtos {
-    grid-template-columns: 1fr;
-  }
-
-  .welcome {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .vaca {
-    align-self: center;
-  }
-}
-
