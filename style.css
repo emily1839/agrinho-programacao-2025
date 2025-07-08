@@ -8,19 +8,23 @@ header {
   background-color: #b2d88d;
   color: #2d591a;
   display: flex;
+  justify-content: center; /* Centraliza o título */
   align-items: center;
   padding: 10px;
+  position: relative;
 }
 
 .menu {
   font-size: 24px;
-  margin-right: 10px;
+  position: absolute;
+  left: 20px;
   cursor: pointer;
 }
 
-header h1 {
+.titulo-centralizado {
   font-size: 28px;
   font-weight: bold;
+  text-align: center;
 }
 
 .boas-vindas {
@@ -30,12 +34,18 @@ header h1 {
   border-radius: 20px;
   margin: 15px;
   align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .boas-vindas img {
-  width: 100px;
+  width: 150px;
   height: auto;
-  margin-right: 20px;
+}
+
+.mensagem {
+  max-width: 600px;
 }
 
 .mensagem h2 {
