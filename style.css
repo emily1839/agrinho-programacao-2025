@@ -7,54 +7,44 @@ body {
 header {
   background-color: #b2d88d;
   color: #2d591a;
-  text-align: center;
-  padding: 20px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 .menu {
   font-size: 24px;
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-right: 10px;
   cursor: pointer;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
 }
 
 .boas-vindas {
   display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #d7f4a1;
-  padding: 30px;
-  margin: 20px;
+  padding: 20px;
   border-radius: 20px;
-  gap: 30px;
-  flex-wrap: wrap;
+  margin: 15px;
+  align-items: center;
 }
 
-.vaca {
-  width: 150px;
+.boas-vindas img {
+  width: 100px;
   height: auto;
-}
-
-.mensagem {
-  max-width: 600px;
-  color: #2d591a;
+  margin-right: 20px;
 }
 
 .mensagem h2 {
-  margin: 0 0 10px 0;
-  font-size: 24px;
+  margin: 0 0 10px;
+  color: #2d591a;
 }
 
 .mensagem p {
+  color: #2d591a;
   font-size: 15px;
   line-height: 1.5;
 }
